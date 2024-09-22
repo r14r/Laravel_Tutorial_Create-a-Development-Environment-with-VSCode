@@ -61,15 +61,15 @@ RUN echo '%work        ALL=(ALL)       NOPASSWD: ALL' >/etc/sudoers.d/${GRP_NAME
 # -------------------------------------------------------------------------------------------------
 # PHP Composer
 # -------------------------------------------------------------------------------------------------
-ENV COMPOSER_HOME=$COMPOSER_HOME
-ENV COMPOSER_VENDOR_HOME=$COMPOSER_VENDOR_HOME
+ENV COMPOSER_HOME=${COMPOSER_HOME}
+ENV COMPOSER_VENDOR_HOME=${COMPOSER_VENDOR_HOME}
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
-    php composer-setup.php \
-    mv  composer.phar  /usr/local/bin/composer \
-    rm  composer-setup.php
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN mv  composer.phar  /usr/local/bin/composer
+RUN rm  composer-setup.php
 
-RUN composer global require "laravel/installer"
+# RUN composer global require "laravel/installer"
 
 # =================================================================================================
 # USER
@@ -78,8 +78,8 @@ FROM with-user AS final
 
 USER user
 
-VOLUME [ "/c4b" ]
-WORKDIR /c4b
+VOLUME [ "/app" ]
+WORKDIR /app
 
 # PHP Composer ------------------------------------------------------------------------------------
 RUN echo 'export PATH="$COMPOSER_VENDOR_HOME"/bin:$PATH\n'        >>${USR_HOME}/.bashrc
