@@ -1,0 +1,18 @@
+2024-09-22 15:18:58.186 [info] Extension host with pid 295 started
+2024-09-22 15:18:58.252 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Lock acquired.
+2024-09-22 15:18:58.649 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-22 15:18:58.650 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-09-22 15:18:58.990 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-22 15:18:59.218 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-09-22 15:18:59.219 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-09-22 15:18:59.757 [info] Eager extensions activated
+2024-09-22 15:18:59.759 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-09-22 15:18:59.774 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-09-22 15:18:59.894 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 15:18:59.899 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 15:18:59.905 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 15:19:06.883 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-09-22 15:19:12.296 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2024-09-22 15:19:38.382 [info] Extension host terminating: received terminate message from renderer
+2024-09-22 15:19:38.383 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-09-22 15:19:38.487 [info] Extension host with pid 295 exiting with code 0

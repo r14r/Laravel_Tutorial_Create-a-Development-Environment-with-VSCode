@@ -1,0 +1,23 @@
+2024-09-22 14:10:21.153 [info] Extension host with pid 624 started
+2024-09-22 14:10:21.155 [error] Error: EEXIST: file already exists, open '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock'
+2024-09-22 14:10:21.190 [error] SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at Wb (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:6162)
+	at async V$ (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:5798)
+	at async WB.g (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:4658)
+	at async WB.h (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:112:10481)
+2024-09-22 14:10:21.192 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-09-22 14:10:21.223 [error] SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at Wb (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:6162)
+	at async QB (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:6421)
+	at async WB.g (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:172:4658)
+	at async WB.h (file:///vscode/vscode-server-insiders/bin/linux-x64/527e41ff551bb1001d2f224c2dec2e2ea3b66832-insider/out/vs/workbench/api/node/extensionHostProcess.js:112:10481)
+2024-09-22 14:10:21.224 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Could not read pid of lock holder.
+2024-09-22 14:10:21.224 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Deleting a stale lock.
+2024-09-22 14:10:21.233 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Lock acquired.
+2024-09-22 14:10:21.445 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-22 14:10:21.685 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-22 14:10:21.726 [info] Extension host terminating: received terminate message from renderer
+2024-09-22 14:10:21.733 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-09-22 14:10:21.737 [info] Extension host with pid 624 exiting with code 0

@@ -1,0 +1,13 @@
+{
+	"name": "Laravel Development",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/c4b",
+
+	"forwardPorts": [ 
+		80,
+		8000,
+		8080,
+		3306
+	]
+}

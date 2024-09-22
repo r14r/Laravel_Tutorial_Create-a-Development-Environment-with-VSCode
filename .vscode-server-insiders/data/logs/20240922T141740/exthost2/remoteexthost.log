@@ -1,0 +1,7 @@
+2024-09-22 14:18:50.169 [info] Extension host with pid 797 started
+2024-09-22 14:18:50.221 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Lock acquired.
+2024-09-22 14:18:50.575 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-22 14:18:50.937 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-22 14:18:50.962 [info] Extension host terminating: received terminate message from renderer
+2024-09-22 14:18:50.965 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-09-22 14:18:50.969 [info] Extension host with pid 797 exiting with code 0

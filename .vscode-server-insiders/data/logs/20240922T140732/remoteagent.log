@@ -1,0 +1,12 @@
+2024-09-22 14:07:32.223 [info] 
+
+
+
+
+2024-09-22 14:07:32.239 [info] Extension host agent started.
+2024-09-22 14:07:32.324 [info] [127.0.0.1][3b05ffea][ManagementConnection] New connection established.
+2024-09-22 14:07:32.326 [debug] No uninstalled extensions found.
+2024-09-22 14:07:32.343 [info] Log level changed to info
+2024-09-22 14:07:32.523 [info] [127.0.0.1][502d0148][ExtensionHostConnection] New connection established.
+2024-09-22 14:07:32.609 [info] [127.0.0.1][502d0148][ExtensionHostConnection] <299> Launched Extension Host Process.
+2024-09-22 14:09:23.993 [info] [127.0.0.1][3b05ffea][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.

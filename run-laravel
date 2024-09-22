@@ -1,0 +1,2 @@
+docker run --name laravel -v ${PWD}/app:/app bitnami/laravel:latest
+

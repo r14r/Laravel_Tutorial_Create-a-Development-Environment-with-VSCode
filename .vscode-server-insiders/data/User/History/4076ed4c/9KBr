@@ -1,0 +1,54 @@
+FROM ubuntu:latest
+
+#
+RUN apt update
+RUN apt -y upgrade
+
+ENV DEBIAN_FRONTEND="noninteractive" TZ="Europe/Berlin"
+RUN apt-get -y install tzdata
+
+RUN apt install -y unzip
+RUN apt install -y php libapache2-mod-php
+
+#
+ENV COMPOSER_HOME=/app/composer
+ENV COMPOSER_VENDOR_HOME=$COMPOSER_HOME/vendor
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN mv  composer.phar  /usr/local/bin/composer
+
+RUN composer global require "laravel/installer"
+
+ENV USERHOME="/workspaces/home.sumati-balwan.laravel"
+
+# Create user
+RUN    groupadd work             -g   10000 \
+    && adduser user --uid 10000 --gid 10000 --home ${USERHOME} --disabled-password --gecos User
+
+# Setup sudo
+# RUN echo '%work        ALL=(ALL)       NOPASSWD: ALL' >/etc/sudoers.d/work
+
+RUN echo 'Users home: ${USERHOME}'
+RUN echo 'PATH=/app/composer/vendor/bin:$PATH\n'               >>${USERHOME}/.profile
+RUN echo 'export COMPOSER_HOME=/app/composer\n'                >>${USERHOME}/.profile
+RUN echo 'export COMPOSER_VENDOR_HOME=$COMPOSER_HOME/vendor\n' >>${USERHOME}/.profile
+
+# Install MariaDB client
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#    && apt-get install -y mariadb-client \ 
+#    && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+
+# Install php-mysql driver
+# RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# [Optional] Uncomment this section to install additional OS packages.
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+# [Optional] Uncomment this line to install global node packages.
+# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+
+
+WORKDIR /workspaces
+USER    user

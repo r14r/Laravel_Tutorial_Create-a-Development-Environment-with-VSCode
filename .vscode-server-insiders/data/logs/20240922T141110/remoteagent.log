@@ -1,0 +1,19 @@
+2024-09-22 14:11:10.194 [info] 
+
+
+
+
+2024-09-22 14:11:10.205 [info] Extension host agent started.
+2024-09-22 14:11:10.264 [debug] No uninstalled extensions found.
+2024-09-22 14:11:10.266 [info] [127.0.0.1][7cd46fb1][ManagementConnection] New connection established.
+2024-09-22 14:11:10.282 [info] Log level changed to info
+2024-09-22 14:11:10.445 [info] [127.0.0.1][773b6b85][ExtensionHostConnection] New connection established.
+2024-09-22 14:11:10.478 [info] [127.0.0.1][773b6b85][ExtensionHostConnection] <299> Launched Extension Host Process.
+2024-09-22 14:11:18.892 [info] Getting Manifest... ms-azuretools.vscode-docker
+2024-09-22 14:11:19.050 [info] Installing extension: ms-azuretools.vscode-docker {"isMachineScoped":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/extensions.json","external":"file:///workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/extensions.json","path":"/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.0-insider","date":"2024-09-20T05:03:57.400Z"}}
+2024-09-22 14:11:21.421 [info] Extension signature verification result for ms-azuretools.vscode-docker: Success. Executed: true. Duration: 1600ms.
+2024-09-22 14:11:21.810 [info] Extracted extension to file:///workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/ms-azuretools.vscode-docker-1.29.2: ms-azuretools.vscode-docker
+2024-09-22 14:11:21.817 [info] Renamed to /workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/ms-azuretools.vscode-docker-1.29.2
+2024-09-22 14:11:21.855 [info] Extension installed successfully: ms-azuretools.vscode-docker file:///workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/extensions/extensions.json
+2024-09-22 14:17:16.478 [info] [127.0.0.1][7cd46fb1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-09-22 14:17:16.656 [info] [127.0.0.1][773b6b85][ExtensionHostConnection] <299> Extension Host Process exited with code: 0, signal: null.

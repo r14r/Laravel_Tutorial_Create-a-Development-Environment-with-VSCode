@@ -1,0 +1,41 @@
+FROM ubuntu:latest
+
+#
+RUN apt update
+RUN apt -y upgrade
+
+ENV DEBIAN_FRONTEND="noninteractive" TZ="Europe/Berlin"
+RUN apt-get -y install tzdata
+
+RUN apt install -y unzip
+RUN apt install -y php libapache2-mod-php
+
+#
+ENV COMPOSER_HOME=/app/composer
+ENV COMPOSER_VENDOR_HOME=$COMPOSER_HOME/vendor
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN mv  composer.phar  /usr/local/bin/composer
+
+RUN composer global require "laravel/installer"
+
+ENV USERHOME="/workspaces/home.sumati-balwan.laravel"
+
+# Create user
+RUN    groupadd work             -g   10000 \
+    && adduser user --uid 10000 --gid 10000 --home ${USERHOME} --disabled-password --gecos User
+
+# Setup sudo
+# RUN echo '%work        ALL=(ALL)       NOPASSWD: ALL' >/etc/sudoers.d/work
+
+RUN echo 'Users home: ${USERHOME}'
+RUN echo 'PATH=/app/composer/vendor/bin:$PATH\n'               >>${USERHOME}/.profile
+RUN echo 'export COMPOSER_HOME=/app/composer\n'                >>${USERHOME}/.profile
+RUN echo 'export COMPOSER_VENDOR_HOME=$COMPOSER_HOME/vendor\n' >>${USERHOME}/.profile
+
+
+
+
+WORKDIR ${USERHOME}
+USER    user

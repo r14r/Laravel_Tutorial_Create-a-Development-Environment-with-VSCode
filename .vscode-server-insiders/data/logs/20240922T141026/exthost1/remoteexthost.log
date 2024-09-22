@@ -1,0 +1,16 @@
+2024-09-22 14:10:28.954 [info] Extension host with pid 296 started
+2024-09-22 14:10:29.088 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-22 14:10:29.091 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-09-22 14:10:29.159 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Lock acquired.
+2024-09-22 14:10:29.290 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-22 14:10:29.522 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-09-22 14:10:29.525 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-09-22 14:10:29.875 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 14:10:29.876 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 14:10:29.877 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-09-22 14:10:30.176 [info] Eager extensions activated
+2024-09-22 14:10:30.177 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-09-22 14:10:30.178 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-09-22 14:11:05.446 [info] Extension host terminating: received terminate message from renderer
+2024-09-22 14:11:05.447 [info] Lock '/workspaces/home.sumati-balwan.laravel/.vscode-server-insiders/data/User/workspaceStorage/9b671ad854542ab109ae30a0126dcfdb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-09-22 14:11:05.570 [info] Extension host with pid 296 exiting with code 0
